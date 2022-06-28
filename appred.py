@@ -1,3 +1,4 @@
+
 from flask import Flask ,render_template, redirect, request,flash
 import logging, os
 from app.read_sequence import predict_validation, protein_validation,motif_validation
@@ -15,7 +16,7 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s %(message)s',
                     filename= os.path.join(app.static_folder, 'logger', 'appred.log'),
                     filemode='a')
-
+ 
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -25,9 +26,6 @@ def predict():
     if request.method =="POST":
         form = request.form
         sequence = form["sequence"]
-        negative_data = form["negdata"]
-        feature_selection = form["featureSelection"]
-        modal_selection  = form["ModalSelection"]
         threshold = float(form["threshold"])
         if len(sequence) == 0:
             flash("sequence can't be empty","danger")
@@ -35,8 +33,9 @@ def predict():
         file = predict_validation(sequence)
         if file == None:
             return render_template("predict.html")
+        result = Model_pred(negative_data,"predict",file,modal_selection,threshold)
         if feature_selection =="SVC":
-            result = Model_pred(negative_data,"predict",file,modal_selection,threshold)
+           
             return render_template("results.html",tables = result,result_message=result_message("predict"),result_title=result_title("predict"))
         elif feature_selection =="MRMR":
             result = MRMR_Model_pred(negative_data,"predict",file,modal_selection,threshold)
@@ -113,4 +112,5 @@ def something_wrong(e):
 if __name__== "__main__":
     app.run(
         host="0.0.0.0",
+        debug = True
     )

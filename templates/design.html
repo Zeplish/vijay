@@ -6,12 +6,17 @@ Design
 
 <div class="container mainblock">
   <div>
-    <h2 class="heading-color" style="text-align: center"><i> Identifying the mutant peptides having antiprotozoal activity</i></h2>
+    <h2 class="heading-color" style="text-align: center"><i> Identifying IL-13 inducing peptides from protein sequence</i></h2>
   </div>
   <hr>
   <br />
   <div class="container" style="text-align: justify;">
-    <h6><i>This module generate all potential mutants of a given peptide by mutating one residue at a time while keeping the remaining amino acids of the peptide constant. This module helps the user to identify the mutants that might have the highest antiprotozoal activity based on their probability score.<br> For more help please visit <a style="text-decoration: none;" href="{{request.script_root}}/help">Help</a>
+    <h6><i>
+      This module breaksagiven protein sequence into all possible overlapping peptides according to the length
+      defined by the user.It is designed to allow the user to identify regions in a protein which could have an IL-13
+      induction potential.These peptides can tehn be tested experimentally.
+      <br>
+      For more help please visit <a style="text-decoration: none;" href="{{request.script_root}}/help">Help</a>
     </i></h6>
   </div>
   <br>
@@ -31,96 +36,6 @@ Design
       </button>
       <textarea class="form-control input_area" id="design_input_area" name="sequence" rows="3"
         placeholder="type or paste here"></textarea>
-    </div>
-    <hr>
-    <p><b>Select Negative Dataset: </b></p>
-    <div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="negdata" id="Antiviral" value="Antiviral" required />
-        <label class="form-check-label" for="Antiviral">
-          <h6>Antiviral</h6>
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="negdata" id="Antibacterial" value="Antibacterial" required />
-        <label class="form-check-label" for="Antibacterial">
-          <h6>Antibacterial</h6>
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="negdata" id="Antifungal" value="Antifungal" required />
-        <label class="form-check-label" for="Antifungal">
-          <h6>Antifungal</h6>
-        </label>
-      </div>
-
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="negdata" id="AMP" value="AMP" required />
-        <label class="form-check-label" for="AMP">
-          <h6>AMP</h6>
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="negdata" id="NON_AMP" value="NON_AMP" required checked />
-        <label class="form-check-label" for="NON_AMP">
-          <h6>Non-AMP</h6>
-        </label>
-      </div>
-
-    </div>
-    <hr>
-    <p><b>Feature Selection Method: </b></p>
-    <div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="featureSelection" id="SVC" value="SVC" required />
-        <label class="form-check-label" for="SVC">
-          <h6>SVC-L1</h6>
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="featureSelection" id="MRMR" value="MRMR" required checked />
-        <label class="form-check-label" for="MRMR">
-          <h6>mRMR</h6>
-        </label>
-      </div>
-    </div>
-    <hr>
-    <p><b>Select Prediction Model: </b></p>
-    <div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="ModalSelection" value="DT" id="DT" required />
-        <label class="form-check-label" for="DT">
-          <h6>Decision Tree</h6>
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="ModalSelection" value="RF" id="RF" required />
-        <label class="form-check-label" for="RF">
-          <h6>Random Forest</h6>
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="ModalSelection" value="SVM" id="SVM" required />
-        <label class="form-check-label" for="SVM">
-          <h6>Support Vector Machine
-          </h6>
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="ModalSelection" value="Logistic_Regression"
-          id="Logistic_Regression" required />
-        <label class="form-check-label" for="Logistic_Regression">
-          <h6>Logistic Regression</h6>
-
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="ModalSelection" value="XgBoost" id="XgBoost" required
-          checked />
-        <label class="form-check-label" for="XgBoost">
-          <h6>XGBoost</h6>
-        </label>
-      </div>
     </div>
     <p>
       <hr>
