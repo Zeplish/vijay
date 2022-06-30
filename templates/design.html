@@ -6,15 +6,15 @@ Design
 
 <div class="container mainblock">
   <div>
-    <h2 class="heading-color" style="text-align: center"><i> Identifying IL-13 inducing peptides from protein sequence</i></h2>
+    <h2 class="heading-color" style="text-align: center"><i> Identifying the mutant peptides that can induce IL-13</i></h2>
   </div>
   <hr>
   <br />
   <div class="container" style="text-align: justify;">
     <h6><i>
-      This module breaksagiven protein sequence into all possible overlapping peptides according to the length
-      defined by the user.It is designed to allow the user to identify regions in a protein which could have an IL-13
-      induction potential.These peptides can tehn be tested experimentally.
+      This module generate all potential mutants of a given peptide by mutating one residue at a time while
+      keeping the remaining amino acids of the peptide constant. This module helps the user to identify the
+      mutants that might have the highest IL-13 induction activity based on their probability score.
       <br>
       For more help please visit <a style="text-decoration: none;" href="{{request.script_root}}/help">Help</a>
     </i></h6>
@@ -39,6 +39,8 @@ Design
     </div>
     <p>
       <hr>
+      <h5>eXtreme Gradient Boosting Probability Threshold:
+      </h5>
       <b>Threshold</b> (Enter value between 0.1 to 1.0)<b> :</b>
 
       <input type="number" step="0.01" name="threshold" id="threshold" min="0.1" max="1" required />

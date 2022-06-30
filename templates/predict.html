@@ -12,13 +12,14 @@ Predict
   <br />
   <div class="container" style="text-align: justify;">
     <h6><i>This module is designed to predict IL-13 inducing peptides, where the user can paste or upload file
-      containing peptide sequence(s). Users are asked to provide sequences ranging in length from 8 to
-      100 amino acids.<a style="text-decoration: none;" href="{{request.script_root}}/help">Help</a>
+        containing peptide sequence(s). Users are asked to provide sequences ranging in length from 8 to
+        100 amino acids.<br> For more help please visit <a style="text-decoration: none;"
+          href="{{request.script_root}}/help">Help</a>
 
 
       </i></h6>
   </div>
-  
+
   <br>
   <hr>
   <form method="POST" action="{{request.script_root}}/predict" enctype="multipart/form-data">
@@ -45,20 +46,21 @@ Predict
 
     <p>
       <hr>
-      <h5>eXtreme Gradient Boosting Probability Threshold:
-      </h5>
-      <b>Threshold</b> (Enter value between 0.1 to 1.0)<b> :</b>
+    <h5>eXtreme Gradient Boosting Probability Threshold:
+    </h5>
+    <b>Threshold</b> (Enter value between 0.1 to 1.0)<b> :</b>
 
-      <input type="number" step="0.01" name="threshold" id="threshold" min="0.1" max="1" required/>
+    <input type="number" step="0.01" name="threshold" id="threshold" min="0.1" max="1" required />
     </p>
-    <br><div style="margin-left: 30%;">
-    <a href="{{request.script_root}}/predict"><button type="button" class="btn btn-secondary btn-lg">
-        Clear All
-      </button></a>
-    <button type="submit" class="btn btn-secondary btn-lg" style="float: inherit">
-      Result
-    </button>
-  </div>
+    <br>
+    <div style="margin-left: 30%;">
+      <a href="{{request.script_root}}/predict"><button type="button" class="btn btn-secondary btn-lg">
+          Clear All
+        </button></a>
+      <button type="submit" class="btn btn-secondary btn-lg" style="float: inherit">
+        Result
+      </button>
+    </div>
   </form>
 </div>
 <script type="text/javascript">

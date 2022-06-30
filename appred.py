@@ -2,10 +2,8 @@
 from flask import Flask ,render_template, redirect, request,flash
 import logging, os
 from app.read_sequence import predict_validation, protein_validation,motif_validation
-from app.ML_All_Dataset_SVCL1 import *
-from app.svc_all_features import *
-from app.ML_All_Datset_MRMR import *
-from app.mrmr_all_features import *
+from app.model import *
+from app.features import *
 from app.message import result_message,result_title,error_message,error_title
 
 app = Flask(__name__)
@@ -33,13 +31,8 @@ def predict():
         file = predict_validation(sequence)
         if file == None:
             return render_template("predict.html")
-        result = Model_pred(negative_data,"predict",file,modal_selection,threshold)
-        if feature_selection =="SVC":
-           
-            return render_template("results.html",tables = result,result_message=result_message("predict"),result_title=result_title("predict"))
-        elif feature_selection =="MRMR":
-            result = MRMR_Model_pred(negative_data,"predict",file,modal_selection,threshold)
-            return render_template("results.html",tables = result,result_message=result_message("predict"),result_title=result_title("predict"))
+        result = Model_pred(file,threshold)
+        return render_template("results.html",tables = result,result_message=result_message("predict"),result_title=result_title("predict"))
     return render_template("predict.html")
 
 @app.route("/proteinScan",methods=["GET","POST"])
@@ -47,23 +40,16 @@ def protien():
     if request.method == "POST":
         form = request.form
         sequence = form["sequence"]
-        negative_data = form["negdata"]
-        feature_selection = form["featureSelection"]
-        modal_selection  = form["ModalSelection"]
         threshold = float(form["threshold"])
         k = int(form["slider_value"])
         if len(sequence) == 0:
             flash("sequence can't be empty","danger")
             return render_template("protein.html")
-        file = protein_validation(sequence, k)
+        file = protein_validation(sequence,k)
         if file == None:
             return render_template("protein.html")
-        if feature_selection =="SVC":
-            result = Model_pred(negative_data,"predict",file,modal_selection,threshold)
-            return render_template("results.html",tables = result,result_message=result_message("protein"),result_title=result_title("protein"))
-        elif feature_selection =="MRMR":
-            result = MRMR_Model_pred(negative_data,"predict",file,modal_selection,threshold)
-            return render_template("results.html",tables = result,result_message=result_message("protein"),result_title=result_title("protein"))
+        result = Model_pred(file,threshold)
+        return render_template("results.html",tables = result,result_message=result_message("protein"),result_title=result_title("protein"))
     return render_template("protein.html")
 
 @app.route("/dataset")
@@ -83,9 +69,6 @@ def design():
     if request.method =="POST":
         form = request.form
         sequence = form["sequence"]
-        negative_data = form["negdata"]
-        feature_selection = form["featureSelection"]
-        modal_selection  = form["ModalSelection"]
         threshold = float(form["threshold"])
         if len(sequence) == 0:
             flash("sequence can't be empty","danger")
@@ -93,12 +76,9 @@ def design():
         file = motif_validation(sequence)
         if file == None:
             return render_template("design.html")
-        if feature_selection =="SVC":
-            result = Model_pred(negative_data,"predict",file,modal_selection,threshold)
-            return render_template("results.html",tables = result,result_message=result_message("design"),result_title=result_title("design"))
-        elif feature_selection =="MRMR":
-            result = MRMR_Model_pred(negative_data,"predict",file,modal_selection,threshold)
-            return render_template("results.html",tables = result,result_message=result_message("design"),result_title=result_title("design"))
+
+        result = Model_pred(file,threshold)
+        return render_template("results.html",tables = result,result_message=result_message("design"),result_title=result_title("design"))
     return render_template("design.html")
 
 @app.errorhandler(404)
