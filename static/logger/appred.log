@@ -1863,3 +1863,194 @@
 2022-06-30 17:31:59,855 INFO 127.0.0.1 - - [30/Jun/2022 17:31:59] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
 2022-06-30 17:31:59,856 INFO 127.0.0.1 - - [30/Jun/2022 17:31:59] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
 2022-06-30 17:31:59,909 INFO 127.0.0.1 - - [30/Jun/2022 17:31:59] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:13:00,584 INFO  * Restarting with watchdog (windowsapi)
+2022-07-02 16:13:01,289 WARNING  * Debugger is active!
+2022-07-02 16:13:01,291 INFO  * Debugger PIN: 893-220-150
+2022-07-02 16:13:01,334 WARNING  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-07-02 16:13:01,334 INFO  * Running on http://192.168.1.6:5000/ (Press CTRL+C to quit)
+2022-07-02 16:13:08,319 INFO 127.0.0.1 - - [02/Jul/2022 16:13:08] "GET / HTTP/1.1" 200 -
+2022-07-02 16:13:08,930 INFO 127.0.0.1 - - [02/Jul/2022 16:13:08] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:13:08,932 INFO 127.0.0.1 - - [02/Jul/2022 16:13:08] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:13:08,934 INFO 127.0.0.1 - - [02/Jul/2022 16:13:08] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:13:08,935 INFO 127.0.0.1 - - [02/Jul/2022 16:13:08] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:13:08,941 INFO 127.0.0.1 - - [02/Jul/2022 16:13:08] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:13:08,946 INFO 127.0.0.1 - - [02/Jul/2022 16:13:08] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:13:09,038 INFO 127.0.0.1 - - [02/Jul/2022 16:13:09] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:13:10,901 INFO 127.0.0.1 - - [02/Jul/2022 16:13:10] "GET /predict HTTP/1.1" 200 -
+2022-07-02 16:13:10,935 INFO 127.0.0.1 - - [02/Jul/2022 16:13:10] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:13:10,947 INFO 127.0.0.1 - - [02/Jul/2022 16:13:10] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:13:10,947 INFO 127.0.0.1 - - [02/Jul/2022 16:13:10] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:13:10,951 INFO 127.0.0.1 - - [02/Jul/2022 16:13:10] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:13:10,956 INFO 127.0.0.1 - - [02/Jul/2022 16:13:10] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:13:10,957 INFO 127.0.0.1 - - [02/Jul/2022 16:13:10] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:13:11,031 INFO 127.0.0.1 - - [02/Jul/2022 16:13:11] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:15:09,206 INFO 127.0.0.1 - - [02/Jul/2022 16:15:09] "GET /predict HTTP/1.1" 200 -
+2022-07-02 16:15:09,258 INFO 127.0.0.1 - - [02/Jul/2022 16:15:09] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:09,270 INFO 127.0.0.1 - - [02/Jul/2022 16:15:09] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:09,271 INFO 127.0.0.1 - - [02/Jul/2022 16:15:09] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:09,271 INFO 127.0.0.1 - - [02/Jul/2022 16:15:09] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:15:09,271 INFO 127.0.0.1 - - [02/Jul/2022 16:15:09] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:09,272 INFO 127.0.0.1 - - [02/Jul/2022 16:15:09] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:15:09,435 INFO 127.0.0.1 - - [02/Jul/2022 16:15:09] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:15:09,485 INFO 127.0.0.1 - - [02/Jul/2022 16:15:09] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:15:12,135 INFO 127.0.0.1 - - [02/Jul/2022 16:15:12] "GET /design HTTP/1.1" 200 -
+2022-07-02 16:15:12,177 INFO 127.0.0.1 - - [02/Jul/2022 16:15:12] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:12,181 INFO 127.0.0.1 - - [02/Jul/2022 16:15:12] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:12,184 INFO 127.0.0.1 - - [02/Jul/2022 16:15:12] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:12,185 INFO 127.0.0.1 - - [02/Jul/2022 16:15:12] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:12,188 INFO 127.0.0.1 - - [02/Jul/2022 16:15:12] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:15:12,189 INFO 127.0.0.1 - - [02/Jul/2022 16:15:12] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:15:12,246 INFO 127.0.0.1 - - [02/Jul/2022 16:15:12] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:15:16,261 INFO 127.0.0.1 - - [02/Jul/2022 16:15:16] "GET /proteinScan HTTP/1.1" 200 -
+2022-07-02 16:15:16,303 INFO 127.0.0.1 - - [02/Jul/2022 16:15:16] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:16,309 INFO 127.0.0.1 - - [02/Jul/2022 16:15:16] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:16,312 INFO 127.0.0.1 - - [02/Jul/2022 16:15:16] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:16,314 INFO 127.0.0.1 - - [02/Jul/2022 16:15:16] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:15:16,317 INFO 127.0.0.1 - - [02/Jul/2022 16:15:16] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:15:16,322 INFO 127.0.0.1 - - [02/Jul/2022 16:15:16] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:15:16,374 INFO 127.0.0.1 - - [02/Jul/2022 16:15:16] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:17:40,425 INFO 127.0.0.1 - - [02/Jul/2022 16:17:40] "GET /proteinScan HTTP/1.1" 200 -
+2022-07-02 16:17:40,468 INFO 127.0.0.1 - - [02/Jul/2022 16:17:40] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:40,477 INFO 127.0.0.1 - - [02/Jul/2022 16:17:40] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:40,478 INFO 127.0.0.1 - - [02/Jul/2022 16:17:40] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:40,481 INFO 127.0.0.1 - - [02/Jul/2022 16:17:40] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:40,485 INFO 127.0.0.1 - - [02/Jul/2022 16:17:40] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:17:40,485 INFO 127.0.0.1 - - [02/Jul/2022 16:17:40] "GET /static/assets/bootstrap/js/main.js HTTP/1.1" 200 -
+2022-07-02 16:17:40,659 INFO 127.0.0.1 - - [02/Jul/2022 16:17:40] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:17:40,703 INFO 127.0.0.1 - - [02/Jul/2022 16:17:40] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:17:48,970 INFO 127.0.0.1 - - [02/Jul/2022 16:17:48] "GET /predict HTTP/1.1" 200 -
+2022-07-02 16:17:49,011 INFO 127.0.0.1 - - [02/Jul/2022 16:17:49] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:49,022 INFO 127.0.0.1 - - [02/Jul/2022 16:17:49] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:49,026 INFO 127.0.0.1 - - [02/Jul/2022 16:17:49] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:49,028 INFO 127.0.0.1 - - [02/Jul/2022 16:17:49] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:49,029 INFO 127.0.0.1 - - [02/Jul/2022 16:17:49] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:17:49,030 INFO 127.0.0.1 - - [02/Jul/2022 16:17:49] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:17:49,092 INFO 127.0.0.1 - - [02/Jul/2022 16:17:49] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:17:53,519 INFO 127.0.0.1 - - [02/Jul/2022 16:17:53] "GET /design HTTP/1.1" 200 -
+2022-07-02 16:17:53,556 INFO 127.0.0.1 - - [02/Jul/2022 16:17:53] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:53,563 INFO 127.0.0.1 - - [02/Jul/2022 16:17:53] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:53,569 INFO 127.0.0.1 - - [02/Jul/2022 16:17:53] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:53,575 INFO 127.0.0.1 - - [02/Jul/2022 16:17:53] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:17:53,581 INFO 127.0.0.1 - - [02/Jul/2022 16:17:53] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:17:53,584 INFO 127.0.0.1 - - [02/Jul/2022 16:17:53] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:17:53,622 INFO 127.0.0.1 - - [02/Jul/2022 16:17:53] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:19:58,286 INFO  * Detected change in 'D:\\work\\appred\\app\\model.py', reloading
+2022-07-02 16:19:58,288 INFO  * Detected change in 'D:\\work\\appred\\app\\model.py', reloading
+2022-07-02 16:19:58,289 INFO  * Detected change in 'D:\\work\\appred\\app\\model.py', reloading
+2022-07-02 16:19:59,471 INFO  * Restarting with watchdog (windowsapi)
+2022-07-02 16:20:00,439 WARNING  * Debugger is active!
+2022-07-02 16:20:00,445 INFO  * Debugger PIN: 893-220-150
+2022-07-02 16:20:00,489 WARNING  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-07-02 16:20:00,489 INFO  * Running on http://192.168.1.6:5000/ (Press CTRL+C to quit)
+2022-07-02 16:20:45,612 INFO  * Detected change in 'D:\\work\\appred\\app\\model.py', reloading
+2022-07-02 16:20:45,613 INFO  * Detected change in 'D:\\work\\appred\\app\\model.py', reloading
+2022-07-02 16:20:45,613 INFO  * Detected change in 'D:\\work\\appred\\app\\model.py', reloading
+2022-07-02 16:20:46,827 INFO  * Restarting with watchdog (windowsapi)
+2022-07-02 16:20:47,738 WARNING  * Debugger is active!
+2022-07-02 16:20:47,741 INFO  * Debugger PIN: 893-220-150
+2022-07-02 16:20:47,784 WARNING  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-07-02 16:20:47,785 INFO  * Running on http://192.168.1.6:5000/ (Press CTRL+C to quit)
+2022-07-02 16:23:51,886 INFO  * Detected change in 'D:\\work\\appred\\app\\read_sequence.py', reloading
+2022-07-02 16:23:51,886 INFO  * Detected change in 'D:\\work\\appred\\app\\read_sequence.py', reloading
+2022-07-02 16:23:51,886 INFO  * Detected change in 'D:\\work\\appred\\app\\read_sequence.py', reloading
+2022-07-02 16:23:53,072 INFO  * Restarting with watchdog (windowsapi)
+2022-07-02 16:23:53,901 WARNING  * Debugger is active!
+2022-07-02 16:23:53,904 INFO  * Debugger PIN: 893-220-150
+2022-07-02 16:23:53,994 WARNING  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-07-02 16:23:53,994 INFO  * Running on http://192.168.1.6:5000/ (Press CTRL+C to quit)
+2022-07-02 16:24:50,732 INFO 127.0.0.1 - - [02/Jul/2022 16:24:50] "GET /design HTTP/1.1" 200 -
+2022-07-02 16:24:51,227 INFO 127.0.0.1 - - [02/Jul/2022 16:24:51] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:24:51,232 INFO 127.0.0.1 - - [02/Jul/2022 16:24:51] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:24:51,233 INFO 127.0.0.1 - - [02/Jul/2022 16:24:51] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:24:51,236 INFO 127.0.0.1 - - [02/Jul/2022 16:24:51] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:24:51,238 INFO 127.0.0.1 - - [02/Jul/2022 16:24:51] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:24:51,239 INFO 127.0.0.1 - - [02/Jul/2022 16:24:51] "GET /static/assets/bootstrap/js/main.js HTTP/1.1" 200 -
+2022-07-02 16:24:51,256 INFO 127.0.0.1 - - [02/Jul/2022 16:24:51] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:24:51,286 INFO 127.0.0.1 - - [02/Jul/2022 16:24:51] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:25:10,820 INFO 127.0.0.1 - - [02/Jul/2022 16:25:10] "GET /predict HTTP/1.1" 200 -
+2022-07-02 16:25:10,855 INFO 127.0.0.1 - - [02/Jul/2022 16:25:10] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:10,865 INFO 127.0.0.1 - - [02/Jul/2022 16:25:10] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:10,866 INFO 127.0.0.1 - - [02/Jul/2022 16:25:10] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:10,867 INFO 127.0.0.1 - - [02/Jul/2022 16:25:10] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:10,870 INFO 127.0.0.1 - - [02/Jul/2022 16:25:10] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:10,871 INFO 127.0.0.1 - - [02/Jul/2022 16:25:10] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:10,990 INFO 127.0.0.1 - - [02/Jul/2022 16:25:10] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:25:23,794 INFO 127.0.0.1 - - [02/Jul/2022 16:25:23] "GET /contact HTTP/1.1" 200 -
+2022-07-02 16:25:23,826 INFO 127.0.0.1 - - [02/Jul/2022 16:25:23] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:23,834 INFO 127.0.0.1 - - [02/Jul/2022 16:25:23] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:23,839 INFO 127.0.0.1 - - [02/Jul/2022 16:25:23] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:23,846 INFO 127.0.0.1 - - [02/Jul/2022 16:25:23] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:23,849 INFO 127.0.0.1 - - [02/Jul/2022 16:25:23] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:23,852 INFO 127.0.0.1 - - [02/Jul/2022 16:25:23] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:24,024 INFO 127.0.0.1 - - [02/Jul/2022 16:25:24] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,078 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "GET /help HTTP/1.1" 200 -
+2022-07-02 16:25:30,117 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,129 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,129 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,131 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,185 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,185 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,193 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/images/predict.png HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,195 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/images/design.png HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,198 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/images/protein.png HTTP/1.1[0m" 304 -
+2022-07-02 16:25:30,342 INFO 127.0.0.1 - - [02/Jul/2022 16:25:30] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:25:36,463 INFO 127.0.0.1 - - [02/Jul/2022 16:25:36] "GET /dataset HTTP/1.1" 200 -
+2022-07-02 16:25:36,486 INFO 127.0.0.1 - - [02/Jul/2022 16:25:36] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:36,491 INFO 127.0.0.1 - - [02/Jul/2022 16:25:36] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:36,496 INFO 127.0.0.1 - - [02/Jul/2022 16:25:36] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:36,499 INFO 127.0.0.1 - - [02/Jul/2022 16:25:36] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:36,499 INFO 127.0.0.1 - - [02/Jul/2022 16:25:36] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:36,501 INFO 127.0.0.1 - - [02/Jul/2022 16:25:36] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:36,554 INFO 127.0.0.1 - - [02/Jul/2022 16:25:36] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:25:38,092 INFO 127.0.0.1 - - [02/Jul/2022 16:25:38] "GET /proteinScan HTTP/1.1" 200 -
+2022-07-02 16:25:38,134 INFO 127.0.0.1 - - [02/Jul/2022 16:25:38] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:38,136 INFO 127.0.0.1 - - [02/Jul/2022 16:25:38] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:38,142 INFO 127.0.0.1 - - [02/Jul/2022 16:25:38] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:38,145 INFO 127.0.0.1 - - [02/Jul/2022 16:25:38] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:38,146 INFO 127.0.0.1 - - [02/Jul/2022 16:25:38] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:38,148 INFO 127.0.0.1 - - [02/Jul/2022 16:25:38] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:38,192 INFO 127.0.0.1 - - [02/Jul/2022 16:25:38] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:25:39,686 INFO 127.0.0.1 - - [02/Jul/2022 16:25:39] "GET /design HTTP/1.1" 200 -
+2022-07-02 16:25:39,719 INFO 127.0.0.1 - - [02/Jul/2022 16:25:39] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:39,725 INFO 127.0.0.1 - - [02/Jul/2022 16:25:39] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:39,729 INFO 127.0.0.1 - - [02/Jul/2022 16:25:39] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:39,730 INFO 127.0.0.1 - - [02/Jul/2022 16:25:39] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:25:39,733 INFO 127.0.0.1 - - [02/Jul/2022 16:25:39] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:39,734 INFO 127.0.0.1 - - [02/Jul/2022 16:25:39] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:25:39,765 INFO 127.0.0.1 - - [02/Jul/2022 16:25:39] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:26:47,560 INFO 127.0.0.1 - - [02/Jul/2022 16:26:47] "GET /predict HTTP/1.1" 200 -
+2022-07-02 16:26:47,599 INFO 127.0.0.1 - - [02/Jul/2022 16:26:47] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:47,605 INFO 127.0.0.1 - - [02/Jul/2022 16:26:47] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:47,609 INFO 127.0.0.1 - - [02/Jul/2022 16:26:47] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:47,611 INFO 127.0.0.1 - - [02/Jul/2022 16:26:47] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:26:47,612 INFO 127.0.0.1 - - [02/Jul/2022 16:26:47] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:47,612 INFO 127.0.0.1 - - [02/Jul/2022 16:26:47] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:26:47,656 INFO 127.0.0.1 - - [02/Jul/2022 16:26:47] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:26:52,026 INFO 127.0.0.1 - - [02/Jul/2022 16:26:52] "GET /design HTTP/1.1" 200 -
+2022-07-02 16:26:52,066 INFO 127.0.0.1 - - [02/Jul/2022 16:26:52] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:52,076 INFO 127.0.0.1 - - [02/Jul/2022 16:26:52] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:52,077 INFO 127.0.0.1 - - [02/Jul/2022 16:26:52] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:26:52,079 INFO 127.0.0.1 - - [02/Jul/2022 16:26:52] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:52,079 INFO 127.0.0.1 - - [02/Jul/2022 16:26:52] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:52,080 INFO 127.0.0.1 - - [02/Jul/2022 16:26:52] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:26:52,121 INFO 127.0.0.1 - - [02/Jul/2022 16:26:52] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:26:53,172 INFO 127.0.0.1 - - [02/Jul/2022 16:26:53] "GET /proteinScan HTTP/1.1" 200 -
+2022-07-02 16:26:53,204 INFO 127.0.0.1 - - [02/Jul/2022 16:26:53] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:53,211 INFO 127.0.0.1 - - [02/Jul/2022 16:26:53] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:53,219 INFO 127.0.0.1 - - [02/Jul/2022 16:26:53] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:53,224 INFO 127.0.0.1 - - [02/Jul/2022 16:26:53] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:26:53,230 INFO 127.0.0.1 - - [02/Jul/2022 16:26:53] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:26:53,231 INFO 127.0.0.1 - - [02/Jul/2022 16:26:53] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:26:53,265 INFO 127.0.0.1 - - [02/Jul/2022 16:26:53] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-02 16:27:55,906 INFO 127.0.0.1 - - [02/Jul/2022 16:27:55] "POST /proteinScan HTTP/1.1" 200 -
+2022-07-02 16:27:55,944 INFO 127.0.0.1 - - [02/Jul/2022 16:27:55] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:27:55,949 INFO 127.0.0.1 - - [02/Jul/2022 16:27:55] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-02 16:27:55,953 INFO 127.0.0.1 - - [02/Jul/2022 16:27:55] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-02 16:27:55,955 INFO 127.0.0.1 - - [02/Jul/2022 16:27:55] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-02 16:27:55,956 INFO 127.0.0.1 - - [02/Jul/2022 16:27:55] "[36mGET /static/assets/css/footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-02 16:27:55,957 INFO 127.0.0.1 - - [02/Jul/2022 16:27:55] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-02 16:27:55,995 INFO 127.0.0.1 - - [02/Jul/2022 16:27:55] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -

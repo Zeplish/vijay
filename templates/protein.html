@@ -11,9 +11,7 @@ Protein
   </div>
   <br>
   <div class="container" style="text-align: justify;">
-    <h6><i>     This module breaks a given protein sequence into all possible overlapping peptides according to the length
-      defined by the user.It is designed to allow the user to identify regions in a protein which could have an IL-13
-      induction potential.These peptides can tehn be tested experimentally.<br> For more help please visit <a style="text-decoration: none;" href="{{request.script_root}}/help">Help</a>
+    <h6><i>Here a protein is broken into all the possible overlapping peptides according to the length defined by the user. This will help to identify the peptide sequence that might have IL-13 induction ability.<br> For more help please visit <a style="text-decoration: none;" href="{{request.script_root}}/help">Help</a>
     </i></h6>
   </div>
   <br />
@@ -44,14 +42,14 @@ Protein
     <p>
       <h5>eXtreme Gradient Boosting Probability Threshold:
       </h5>
-      <b>Threshold</b> (Enter value between 0.1 to 1.0)<b> :</b>
+      (Enter value between 0.00 to 1.00)<b> :</b>
 
       <input
         type="number"
         step="0.01"
         name="threshold"
         id="threshold"
-        min="0.1"
+        min="0.00"
         max="1"
         required
       />

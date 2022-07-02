@@ -12,9 +12,7 @@ Design
   <br />
   <div class="container" style="text-align: justify;">
     <h6><i>
-      This module generate all potential mutants of a given peptide by mutating one residue at a time while
-      keeping the remaining amino acids of the peptide constant. This module helps the user to identify the
-      mutants that might have the highest IL-13 induction activity based on their probability score.
+      This module generates all potential mutants of a given peptide. All the residues of a protein are mutated one at a time while keeping the remaining amino acids of the peptide constant. This module can be used to identify the mutants that might have the highest IL-13 induction ability.
       <br>
       For more help please visit <a style="text-decoration: none;" href="{{request.script_root}}/help">Help</a>
     </i></h6>
@@ -41,9 +39,9 @@ Design
       <hr>
       <h5>eXtreme Gradient Boosting Probability Threshold:
       </h5>
-      <b>Threshold</b> (Enter value between 0.1 to 1.0)<b> :</b>
+   (Enter value between 0.00 to 1.00)<b> :</b>
 
-      <input type="number" step="0.01" name="threshold" id="threshold" min="0.1" max="1" required />
+      <input type="number" step="0.01" name="threshold" id="threshold" min="0.00" max="1" required />
     </p><br>
     <div style="margin-left: 30%;">
     <a href="{{request.script_root}}/design"><button type="button" class="btn btn-secondary btn-lg" >

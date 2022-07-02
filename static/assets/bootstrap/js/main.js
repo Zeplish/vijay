@@ -1,28 +1,30 @@
 
 function predict_sample(){
     var str = 
-`>SEQ1
-WKLFKKILKVL
->SEQ2
-HPLKQYWWRPSI
->SEQ3
-AYVLDEPK
->SEQ4
-RHGSCNYVFPAHK
->SEQ5
-MGQEQGIPWIL`
+`>seq1
+EGDVFIMPAAHPVAI
+>seq2
+AAVAAAASVPAA
+>seq3
+NVLHSAFEVG
+>seq4
+DNVLHSAFEV
+>seq5
+FRDRARVPLTSNNGI
+>seq6
+DVVPMSQQPFQIELN`
     document.getElementById("input_area").value = str;
 }
 function design_sample(){
-    var str =`VRLIVAVRIWRR`
+    var str =`FFYTPMSRREVED`
 
     document.getElementById("design_input_area").value =str;
 }
 function protein_sample(){
-    var str =`GVFDIIKDAGKQLVAHAMGKIAEKVFLKGIKGMLGKLF`
+    var str =`DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIAFGISNYCQIYPPNANKIREALAQPQRYCREVDVPGIDPNACHYMKCPLVKGQQYDIKYTWIVPKIAPKSEN`
     document.getElementById("pro_input_area").value =str;
 }
-document.getElementById("threshold").value = 0.5
+document.getElementById("threshold").value = 0.06
 let mybutton = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button

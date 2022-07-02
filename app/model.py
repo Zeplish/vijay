@@ -18,10 +18,9 @@ def Model_pred(fastafile,threshold):
         row_T = np.array(row_T)
         model_file = joblib.load(os.path.join(sys.path[0], "app", "XGB_model.sav"))
         probability = model_file.predict_proba(row_T)
+        probability  = round(probability,2)
         if probability[0][1] >= threshold:
-            print(ID[index],Fasta_Seq[index],"Il13 inducing peptide",probability[0][1])
             Result.append([ID[index],Fasta_Seq[index],"Il13 inducing peptide",probability[0][1]])
         else:
-            print(ID[index],Fasta_Seq[index],"Non Il13 inducing peptide",probability[0][1])
             Result.append([ID[index],Fasta_Seq[index],"Non Il13 inducing peptide",probability[0][1]])
     return Result

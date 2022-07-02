@@ -11,9 +11,7 @@ Predict
   <hr>
   <br />
   <div class="container" style="text-align: justify;">
-    <h6><i>This module is designed to predict IL-13 inducing peptides, where the user can paste or upload file
-        containing peptide sequence(s). Users are asked to provide sequences ranging in length from 8 to
-        100 amino acids.<br> For more help please visit <a style="text-decoration: none;"
+    <h6><i>This module is designed to predict the probability of whether a given peptide could induce IL-13 or not. The users are prompted to input the peptide sequences ranging from 8-25 amino acids. In case a peptide sequence is greater than 35 amino acids, then the probability of IL-13 induction will be calculated using the first 35 amino acids only.  <br> For more help please visit <a style="text-decoration: none;"
           href="{{request.script_root}}/help">Help</a>
 
 
@@ -48,9 +46,9 @@ Predict
       <hr>
     <h5>eXtreme Gradient Boosting Probability Threshold:
     </h5>
-    <b>Threshold</b> (Enter value between 0.1 to 1.0)<b> :</b>
+    (Enter value between 0.00 to 1.00)<b> :</b>
 
-    <input type="number" step="0.01" name="threshold" id="threshold" min="0.1" max="1" required />
+    <input type="number" step="0.01" name="threshold" id="threshold" min="0.00" max="1" required />
     </p>
     <br>
     <div style="margin-left: 30%;">

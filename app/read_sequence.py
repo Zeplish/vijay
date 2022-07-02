@@ -9,11 +9,13 @@ def predict_validation(sequence):
     sequence = sequence.split("\r\n")
     invalid_char = set(string.punctuation)
 
+    
     for i in range(0,len(sequence),2):
         if not re.search('>',sequence[i]):
             return flash("The uploaded file/input sequence(s) is not in fasta format","danger")
     
     records = [i.rstrip("\n") for i in sequence]
+
     for fasta in range(1,len(records),2):
         if any(char in invalid_char for char in records[fasta]):
             return flash("Your sequence(s) contains special characters","danger")
@@ -31,8 +33,11 @@ def predict_validation(sequence):
             return flash("Your sequence(s) contains digits. Please enter only alphabetical characters","danger")         
 
     for fasta in range(1,len(records),2):
-        if len(records[fasta]) < 8 or len(records[fasta]) > 100:
-            return flash("The length of the peptide sequence(s) is not in the range of 8-100 amino acids","danger")
+        if len(records[fasta]) < 8:
+            return flash("The length of the peptide sequence(s) is less than 8 amino acids","danger")
+    for fasta in range(1,len(records),2):
+        if len(records[fasta])>35:
+            records[fasta]=records[fasta][:35]
     records_tuple = [(records[x], records[x+1]) for x in range(0,len(records),2)]
     
     return records_tuple
@@ -52,8 +57,8 @@ def protein_validation(sequence,k):
     if " " in sequence:
         return flash("Your sequence contains white space(s)","danger")
    
-    if len(sequence) < 8 or len(sequence) > 100:
-        return flash("The length of the peptide sequence is not in the range of 8-100 amino acids","danger")   
+    if len(sequence) < 8:
+        return flash("The length of the peptide sequence is less than 8 amino acids","danger")   
     
     if sequence.isalpha() and  re.search('[^acdefghiklmnpqrstvwyACDEFGHIKLMNPQRSTVWY]',sequence):
         return flash("Your sequence contains non-natural amino acid(s)","danger")
@@ -88,8 +93,8 @@ def motif_validation(sequence):
     if " " in sequence:
         return flash("Your sequence contain white space(s)","danger")
    
-    if len(sequence) < 8 or len(sequence) > 100:
-        return flash("The length of the peptide sequence is not in the range of 8-100 amino acids","danger")
+    if len(sequence) < 8:
+        return flash("The length of the peptide sequence is less than 8 amino acids","danger")
 
     if sequence.isalpha() and  re.search('[^acdefghiklmnpqrstvwyACDEFGHIKLMNPQRSTVWY]',sequence):
         return flash("Your sequence contains non-natural amino acid(s)","danger")
@@ -97,7 +102,9 @@ def motif_validation(sequence):
     if not sequence.isalpha():
         return flash("Your sequence contains digits. Please enter only alphabetical characters","danger")    
 
-    sequence = sequence.upper()    
+    sequence = sequence.upper()   
+    if len(sequence) > 35:
+        sequence = sequence[:35] 
     for i in range(len(sequence)):
         for j in characters:
             if i != j:
