@@ -11,14 +11,13 @@ def Model_pred(fastafile,threshold):
     Fasta_Seq,ID,test_full_features = IL13_Features(fastafile)
     
     Result = []
-    Result.append(["ID","Sequence","Classification","Probability"])
     for index,row in test_full_features.iterrows():
         row = pd.DataFrame(row)
         row_T = row.transpose()
         row_T = np.array(row_T)
         model_file = joblib.load(os.path.join(sys.path[0], "app", "XGB_model.sav"))
         probability = model_file.predict_proba(row_T)
-        probability  = round(probability,2)
+        probability  = np.round(probability,2)
         if probability[0][1] >= threshold:
             Result.append([ID[index],Fasta_Seq[index],"Il13 inducing peptide",probability[0][1]])
         else:
