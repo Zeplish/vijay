@@ -9,7 +9,7 @@
     <title>{% block title %}{% endblock %}</title>
     <style>
       .hover:hover {
-        background-color: rgb(96, 188, 216);
+        background-color: rgb(125, 116, 207);
       }
       .navcolor {
         color: black;
@@ -124,17 +124,17 @@
     </button>
     <div class="main-container">{% block main %}{% endblock %}</div>
     <div class="footer-basic" id="footerHide">
-      <footer style="background-color: rgb(175, 222, 236)">
+      <footer style="background-color: rgb(162, 156, 214)">
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="{{request.script_root}}/">HOME</a></li>
-          <li class="list-inline-item"><a href="{{request.script_root}}/predict">PREDICT</a></li>
-          <li class="list-inline-item"><a href="{{request.script_root}}/design">DESIGN</a></li>
-          <li class="list-inline-item">
+          <li class="list-inline-item"><b><a href="{{request.script_root}}/">HOME</a></b></li>
+          <li class="list-inline-item"><b><a href="{{request.script_root}}/predict">PREDICT</a></b></li>
+          <li class="list-inline-item"><b><a href="{{request.script_root}}/design">DESIGN</a></b></li>
+          <li class="list-inline-item"><b>
             <a href="{{request.script_root}}/proteinScan">PROTEIN SCAN</a>
-          </li>
-          <li class="list-inline-item"><a href="{{request.script_root}}/dataset">DATASET</a></li>
-          <li class="list-inline-item"><a href="{{request.script_root}}/help">HELP</a></li>
-          <li class="list-inline-item"><a href="{{request.script_root}}/contact">CONTACT US</a></li>
+          </li></b>
+          <li class="list-inline-item"><b><a href="{{request.script_root}}/dataset">DATASET</a></b></li>
+          <li class="list-inline-item"><b><a href="{{request.script_root}}/help">HELP</a></b></li>
+          <li class="list-inline-item"><b><a href="{{request.script_root}}/contact">CONTACT US</a></b></li>
         </ul>
       </footer>
     </div>
