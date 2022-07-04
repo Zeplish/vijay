@@ -85,7 +85,7 @@ def SE_residue_level(df):
     data = df[0].to_list()
     GH=[]
     for i in range(len(data)):
-        my_list={'L':0,'P':0,'T':0}
+        my_list={'I':0,'L':0,'P':0,'T':0}
         seq=data[i]
         num, length = Counter(seq), len(seq)
         num=dict(sorted(num.items()))
@@ -96,7 +96,7 @@ def SE_residue_level(df):
                 if key == C[j]:
                     my_list[key] = round(((F[j]/length)* math.log(F[j]/length, 2)),3)
         GH.append(list(my_list.values()))
-    header_SER = ["SER_L","SER_P","SER_T"] 
+    header_SER = ["SER_I","SER_L","SER_P","SER_T"] 
     df_SER = round(pd.DataFrame(GH,columns = header_SER),3)
     return df_SER
 
