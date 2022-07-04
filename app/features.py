@@ -8,7 +8,26 @@ import os
 import sys
 ############## BTC ####################3
 
-
+def aacp_comp(df):
+    std = list("H")
+    AAC_Result = []
+    #AAC_Result.append("AAC_H")
+    zz = df.iloc[:,0]
+    for j in zz:
+        Result = []
+        for i in std:
+            count = 0
+            for k in j:
+                temp1 = k
+                if temp1 == i:
+                    count += 1
+                composition = (count/len(j))*100
+            Result.append(composition) 
+        AAC_Result.append(Result)
+        #print(AAC_Result)
+    header = ["AAC_H"]   
+    df_AAC= round(pd.DataFrame(AAC_Result,columns = header),3)
+    return df_AAC
 def bond(df) :
     tota = []
     hy = []
@@ -207,17 +226,18 @@ def ctd(df):
     return df_Comp_distribution[["CeTD_75_p_HB1","CeTD_SS1"]]
 
 
-Desired_10_Features =["BTC_S","CeTD_SS1","TPC_RQF","SER_L","SER_T","BTC_T","CeTD_75_p_HB1","SER_P","BTC_H","TPC_LMQ"]
+Desired_10_Features =["BTC_S","CeTD_SS1","TPC_RQF","SER_I","SER_L","SER_T","BTC_T","CeTD_75_p_HB1","AAC_H","SER_P"]
 
 def IL13_Features(sequence):
     Fasta_df = [i[1].upper() for i in sequence ]
     Seq = [i[0] for i in sequence]
     df = pd.DataFrame(Fasta_df)
+    df_AAC = aacp_comp(df)
     df_TPC = tpc_comp(df)
     df_BOND = bond(df)
     df_CTD = ctd(df)
     df_SER = SE_residue_level(df)
-    df_result = pd.concat([df_TPC,df_BOND,df_CTD,df_SER],axis = 1)
+    df_result = pd.concat([df_AAC,df_TPC,df_BOND,df_CTD,df_SER],axis = 1)
     df_result_ordered  = df_result[Desired_10_Features]
     
     

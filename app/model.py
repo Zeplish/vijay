@@ -19,7 +19,7 @@ def Model_pred(fastafile,threshold):
         probability = model_file.predict_proba(row_T)
         probability  = np.round(probability,2)
         if probability[0][1] >= threshold:
-            Result.append([ID[index],Fasta_Seq[index],"Il13 inducing peptide",probability[0][1]])
+            Result.append([ID[index],Fasta_Seq[index],"IL-13 inducing peptide",probability[0][1]])
         else:
-            Result.append([ID[index],Fasta_Seq[index],"Non Il13 inducing peptide",probability[0][1]])
+            Result.append([ID[index],Fasta_Seq[index],"IL-13 non-inducing peptide",probability[0][1]])
     return Result
