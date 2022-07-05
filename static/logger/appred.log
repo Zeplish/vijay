@@ -1,0 +1,46 @@
+2022-07-05 22:41:19,943 INFO  * Restarting with watchdog (windowsapi)
+2022-07-05 22:41:20,765 WARNING  * Debugger is active!
+2022-07-05 22:41:20,778 INFO  * Debugger PIN: 893-220-150
+2022-07-05 22:41:20,842 WARNING  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-07-05 22:41:20,842 INFO  * Running on http://192.168.1.6:5000/ (Press CTRL+C to quit)
+2022-07-05 22:41:24,202 INFO 127.0.0.1 - - [05/Jul/2022 22:41:24] "GET / HTTP/1.1" 200 -
+2022-07-05 22:41:25,098 INFO 127.0.0.1 - - [05/Jul/2022 22:41:25] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-05 22:41:25,099 INFO 127.0.0.1 - - [05/Jul/2022 22:41:25] "GET /static/assets/css/Footer-basic.css HTTP/1.1" 200 -
+2022-07-05 22:41:25,100 INFO 127.0.0.1 - - [05/Jul/2022 22:41:25] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-05 22:41:25,105 INFO 127.0.0.1 - - [05/Jul/2022 22:41:25] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-05 22:41:25,109 INFO 127.0.0.1 - - [05/Jul/2022 22:41:25] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-05 22:41:25,115 INFO 127.0.0.1 - - [05/Jul/2022 22:41:25] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-05 22:41:28,366 INFO 127.0.0.1 - - [05/Jul/2022 22:41:28] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-05 22:41:28,405 INFO 127.0.0.1 - - [05/Jul/2022 22:41:28] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-05 22:41:33,828 INFO 127.0.0.1 - - [05/Jul/2022 22:41:33] "GET /predict HTTP/1.1" 200 -
+2022-07-05 22:41:33,858 INFO 127.0.0.1 - - [05/Jul/2022 22:41:33] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-07-05 22:41:33,863 INFO 127.0.0.1 - - [05/Jul/2022 22:41:33] "[36mGET /static/assets/fonts/ionicons.min.css HTTP/1.1[0m" 304 -
+2022-07-05 22:41:33,865 INFO 127.0.0.1 - - [05/Jul/2022 22:41:33] "[36mGET /static/assets/css/styles.css HTTP/1.1[0m" 304 -
+2022-07-05 22:41:33,867 INFO 127.0.0.1 - - [05/Jul/2022 22:41:33] "[36mGET /static/assets/css/Footer-basic.css HTTP/1.1[0m" 304 -
+2022-07-05 22:41:33,868 INFO 127.0.0.1 - - [05/Jul/2022 22:41:33] "[36mGET /static/assets/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2022-07-05 22:41:33,870 INFO 127.0.0.1 - - [05/Jul/2022 22:41:33] "[36mGET /static/assets/bootstrap/js/main.js HTTP/1.1[0m" 304 -
+2022-07-05 22:41:33,959 INFO 127.0.0.1 - - [05/Jul/2022 22:41:33] "[36mGET /static/assets/fonts/favicon.ico HTTP/1.1[0m" 304 -
+2022-07-05 22:41:46,325 INFO  * Detected change in 'C:\\Users\\yash\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\app.py', reloading
+2022-07-05 22:41:46,332 INFO  * Detected change in 'D:\\work\\appred\\app\\model.py', reloading
+2022-07-05 22:41:46,346 INFO  * Detected change in 'C:\\Users\\yash\\AppData\\Roaming\\Python\\Python39\\site-packages\\joblib\\numpy_pickle.py', reloading
+2022-07-05 22:41:46,359 INFO  * Detected change in 'C:\\Program Files\\Python39\\Lib\\pickle.py', reloading
+2022-07-05 22:41:46,366 INFO  * Detected change in 'C:\\Users\\yash\\AppData\\Roaming\\Python\\Python39\\site-packages\\xgboost\\__init__.py', reloading
+2022-07-05 22:41:46,379 INFO  * Detected change in 'C:\\Users\\yash\\AppData\\Roaming\\Python\\Python39\\site-packages\\xgboost\\core.py', reloading
+2022-07-05 22:41:46,386 INFO 127.0.0.1 - - [05/Jul/2022 22:41:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2022-07-05 22:41:46,387 INFO  * Detected change in 'C:\\Users\\yash\\AppData\\Roaming\\Python\\Python39\\site-packages\\xgboost\\libpath.py', reloading
+2022-07-05 22:41:46,445 INFO 127.0.0.1 - - [05/Jul/2022 22:41:46] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-07-05 22:41:46,445 INFO 127.0.0.1 - - [05/Jul/2022 22:41:46] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-07-05 22:41:46,591 INFO 127.0.0.1 - - [05/Jul/2022 22:41:46] "GET /predict?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2022-07-05 22:41:46,600 INFO 127.0.0.1 - - [05/Jul/2022 22:41:46] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-07-05 22:41:46,651 INFO 127.0.0.1 - - [05/Jul/2022 22:41:46] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-07-05 22:41:47,800 INFO  * Restarting with watchdog (windowsapi)
+2022-07-05 22:41:48,857 WARNING  * Debugger is active!
+2022-07-05 22:41:48,861 INFO  * Debugger PIN: 893-220-150
+2022-07-05 22:41:48,928 WARNING  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-07-05 22:41:48,929 INFO  * Running on http://192.168.1.6:5000/ (Press CTRL+C to quit)
+2022-07-05 23:19:00,339 INFO  * Detected change in 'D:\\work\\appred\\appred.py', reloading
+2022-07-05 23:19:00,341 INFO  * Detected change in 'D:\\work\\appred\\appred.py', reloading
+2022-07-05 23:19:00,341 INFO  * Detected change in 'D:\\work\\appred\\appred.py', reloading
+2022-07-05 23:19:01,620 INFO  * Restarting with watchdog (windowsapi)
